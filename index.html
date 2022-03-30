@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Warehouse Manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+      <header>
+        <h1 class="d-flex justify-content-center p-2">Warehouse Package Manager</h1>
+      </header>
+
+      <main class="container">
+          <div class="row p-2 d-flex">
+              <div class="col d-flex justify-content-center p-3">
+                <button id="weight-btn" onclick="checkBox('heavy')" class="btn btn-primary mx-3">Is heavy?</button>
+                <button id="priority-btn" onclick="checkBox('priority')" class="btn btn-info mx-3">Priority?</button>
+                <button id="fragile-btn" onclick="checkBox('fragile')" class="btn btn-danger mx-3">Fragile?</button>
+              </div>
+              <span class="d-flex justify-content-end">
+                <button id="reset-btn" class="btn btn-dark" onclick="resetProgram()">Reset Program</button>
+              </span>
+          </div>
+          <div id="box-row" class="row">
+              
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                  
+              </div>
+            </div>
+        </div>
+      </main>
+      <footer class="bg-dark text-light d-flex justify-content-center p-3">
+        This is the end.
+      </footer>
+
+      
+      <!-- Bootstrap JavaScript Libraries -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </body>
+</html>

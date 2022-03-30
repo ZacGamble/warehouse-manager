@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 245, 241);
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.box-crop{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.pack{
+    border: 2px solid rgb(0, 0, 0);
+}
+.pack:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 2px 3px 2px ;
+}
